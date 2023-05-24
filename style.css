@@ -1,0 +1,365 @@
+:root{
+    --orange: #ff8e28;
+    --green: #00a850;
+}
+
+*{
+    font-family: 'Nunito',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background: white;
+}
+.header .logo img{
+    width: 75px;
+    height: 75px;
+}
+.navbar a{
+    
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    color: #ff8e28;
+  
+}
+.navbar a:hover{
+    background-color: var(--green);
+    color: white;
+}
+.menu-bar{
+    margin: 0 1rem;
+}
+.menu-bar div{
+    color: #ff8e28;
+    font-size: 3rem;
+    display: none;
+}
+.mycart{
+    font-size: 3rem;
+   color: #ff8e28;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.mycart i:hover{
+    color: #00a850;
+}
+.myicons{
+    display: flex;
+    align-items: center;
+}
+/* home section */
+
+.home{
+    padding: 2rem 9%;
+}
+.main-home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 20rem;
+    
+}
+.inner-home{
+    flex: 1 1 45rem;
+}
+.home-left-content{
+    padding: 0 5rem;
+}
+.home-left-content h2{
+    color: #ff8e28;
+    font-size: 30px;
+    font-family: 'Dancing Script',cursive;
+}
+.home-left-content h1{
+    color: #333;
+    font-size: 40px;
+    padding: 2rem 0;
+    font-weight: 800;
+}
+.home-left-content p{
+    color: #333;
+   font-size: 1.5rem;
+   padding-bottom: 4rem;
+}
+.home-left-content a{
+    padding: 1.5rem 2rem;
+    background-color: var(--green);
+    color: white;
+    font-size: 1.5rem;
+}
+.home-left-content a:hover{
+    border-radius: 10px;
+}
+
+
+ .main-home .home-right-content {
+   padding: 2rem 1rem;
+
+}
+.main-home .home-right-content img{
+    width: 100%;
+}
+
+/* popular-dishes */
+
+.popular-dishes{
+    padding: 2rem 9%;
+}
+.popular-headings{
+    text-align: center;
+}
+.popular-headings h3{
+    font-family: 'dancing script',cursive;
+    color: var(--orange);
+    font-size: 30px;
+    padding: 1rem 0;
+}
+.popular-headings h1{
+    font-size: 40px;
+    color: #333;
+    padding-bottom: 2rem;
+}
+.main-popular{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.inner-pupular{
+    flex: 1 1 400px;
+    padding: 2rem 2rem;
+    position: relative;
+    
+}
+.popular-content img{
+    width: 100%;
+    padding: 2rem;
+}
+.popular-content-inner h2{
+    color: #333;
+    font-size: 25px;
+    padding: 0.5rem 0;
+}
+.popular-content-inner h3{
+    font-size: 20px;
+    color: var(--orange);
+    font-family: 'dancing script',cursive;
+    padding: 1rem 0;
+}
+.icons-popular{
+    position: absolute;
+    right: 2rem;
+}
+.icons-popular i{
+    font-size: 18px;
+    padding: 1rem;
+    color: #131113;
+    background-color: wheat;
+    border-radius: 15px;
+    opacity: 0;
+    margin: 0.5rem;
+   
+}
+.inner-pupular i:hover{
+    border: #00a850 1px solid;
+}
+
+.inner-pupular:hover i{
+    opacity: 1;
+    cursor: pointer;
+    
+}
+.special-offer{
+    padding: 3rem 9%;
+}
+.main-special{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.inner-special{
+    flex: 1 1 45rem;
+}
+.left-special{
+    padding: 0 3rem;
+}
+.left-special h3{
+ color: var(--orange);
+ font-size: 30px;
+ font-family: 'dancing script',cursive;
+ padding: 2rem 0;
+}
+.left-special h2{
+    font-size: 40px;
+    color: #333;
+    font-weight: 800;
+    padding: 1rem 0;
+}
+.left-special p{
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+}
+.left-special a{
+    padding: 1.5rem 2rem;
+    color: white;
+    background: var(--green);
+    font-size: 1.2rem;
+}
+.left-special a:hover{
+    border-radius: 10px;
+}
+.right-special img{
+    width: 100%;
+    padding: 2rem;
+}
+.our-menu{
+    padding: 2rem 9%;
+}
+.our-menu-heading{
+    text-align: center;
+    padding: 2rem 0;
+}
+.our-menu-heading h3{
+    color: var(--orange);
+    font-size: 30px;
+    font-family: 'dancing script',cursive;
+}
+.our-menu-heading h1{
+    color: #333;
+    font-size: 40px;
+    padding: 1rem 0;
+}
+.main-ourmenu{
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.inner-ourmenu{
+    flex: 1 1 300px;
+   padding: 0 2rem;
+   background-color: rgb(242, 240, 240);
+   border-radius: 10px;
+}
+.menu-content h2{
+    color: #333;
+    font-size: 30px;
+}
+.menu-content p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.menu-content img{
+    width: 100%;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px; 
+    margin-left: 150px;
+    justify-content: space-between;
+}
+.contact-right{
+    align-items: center;
+    padding: 30px;
+ 
+}
+.contact-right h3{
+    font-size: 25px;
+    font-family: 'dancing script',cursive;
+    color: #ff8e28;
+}
+.contact-right p{
+    font-size: 30px;
+    font-family: 'dancing script',cursive;
+    padding-top: 20px;
+    color: #00a850;
+
+}
+.contact-left{
+    align-items: center;
+    padding: 30px; 
+    margin-right: 100px;
+}
+.contact-left h3{
+    font-size: 25px;
+    font-family: 'dancing script',cursive;
+    color: #ff8e28;
+    padding-bottom: 20px;
+}
+.contact-left h2{
+    font-size: 30px;
+    color: #0d0f0e;
+    padding-top: 20px;
+}
+.contact-heading h2{
+text-align: center;
+font-size: 30px;
+font-weight: bold;
+padding: 40px;
+}
+
+
+
+
+
+
+
+@media(max-width:768px){
+    .header{
+        padding: 2rem;
+    }
+    html{
+        font-size: 55%;
+    }
+    .navbar{
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #00a850;
+        height: 100vh; 
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .navbar a{
+        background: white;
+        border: 2px solid white;
+        margin: 1rem;
+        display: block;
+        position: fixed;
+    }
+    .menu-bar div{
+        display: initial;
+    }
+}
